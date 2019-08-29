@@ -3,38 +3,38 @@
 	<head>
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="description" content="This is the home page for Cross Platform, a software development company with a focus on software for Christian missions.">
-		<link rel="stylesheet" href="https://unpkg.com/chota@latest">
-		<link rel="shortcut icon" href="./img/favicon.ico" />
+		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 		<link href="./vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 		<link href="./css/freelancer.min.css" rel="stylesheet">
 		<title>Cross Platform</title>
 		<style>
-			.masthead .masthead-avatar {
-				width: 40rem;
+			.masthead {
+				padding-top: calc(1rem + 74px);
+			}
+
+			@media (min-width: 992px) {
+				.masthead {
+					padding-top: calc(1rem + 104px);
+					padding-bottom: 6rem;
+				}
 			}
 		</style>
 	</head>
 	<body id="page-top">
-		<!-- Navigation -->
-		<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-			<div class="container">
-				<a class="navbar-brand js-scroll-trigger" href="#page-top">Go Cross Platform!</a>
-			</div>
-		</nav>
-	  
 		<!-- Masthead -->
 		<header class="masthead bg-primary text-white text-center">
 			<div class="container d-flex align-items-center flex-column">
 				<!-- Masthead Avatar Image -->
-				<img class="masthead-avatar mb-5" src="./img/logo.png" alt="">
+				<img class="masthead-avatar mb-5" src="./img/logo.svg" alt="">
 			
 				<!-- Masthead Heading -->
 				<h1 class="masthead-heading text-uppercase mb-0">Cross Platform</h1>
 			
 				<!-- Masthead Subheading -->
-				<p class="mt-4 masthead-subheading font-weight-light mb-0">This is the future home of Cross Platform.</p>
+				<p class="mt-4 masthead-subheading font-weight-light mb-0">This is the home of Cross Platform.</p>
 			</div>
 	  	</header>
 	
@@ -48,7 +48,7 @@
 				<div class="divider-custom">
 					<div class="divider-custom-line"></div>
 					<div class="divider-custom-icon">
-					<i class="fas fa-star"></i>
+					<i class="fas fa-box-open"></i>
 					</div>
 					<div class="divider-custom-line"></div>
 				</div>
@@ -58,7 +58,7 @@
 						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#kimbleModal">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
 								<div class="portfolio-item-caption-content text-center text-white">
-									<i class="fas fa-plus fa-3x"></i>
+									<i class="fas fa-info-circle fa-2x"></i>
 								</div>
 							</div>
 							<img class="img-fluid" src="./img/kimble-logo.png" alt="">
@@ -78,7 +78,7 @@
 				<div class="divider-custom divider-light">
 					<div class="divider-custom-line"></div>
 					<div class="divider-custom-icon">
-					<i class="fas fa-star"></i>
+					<i class="fas fa-info-circle"></i>
 					</div>
 					<div class="divider-custom-line"></div>
 				</div>
@@ -86,7 +86,7 @@
 				<!-- About Section Content -->
 				<div class="row">
 					<div class="col-lg-4 ml-auto mr-auto text-center">
-						<p class="lead">Cross Platform is a software development company with a focus on software for Christian missions.</p>
+						<p class="lead">Cross Platform is a software development and distribution company with a focus on software for Christian missions.</p>
 					</div>
 				</div>		
 			</div>
@@ -94,7 +94,7 @@
 	
 		<!-- Kimble Modal -->
 		<div class="portfolio-modal modal fade" id="kimbleModal" tabindex="-1" role="dialog" aria-labelledby="kimbleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">
@@ -110,12 +110,15 @@
 									<div class="divider-custom">
 										<div class="divider-custom-line"></div>
 											<div class="divider-custom-icon">
-												<i class="fas fa-star"></i>
+												<i class="fas fa-info-circle"></i>
 											</div>
 										<div class="divider-custom-line"></div>
 									</div>
-									<img class="img-fluid rounded mb-5" src="./img/kimble-logo.png" alt="" />
-									<a target="_blank" href="https://kimble.church" class="mb-5">Kimble is a management system for children's Bible studies.</p>
+									<p class="modal-description">
+										Kimble is a management system designed specifically for children's Bible studies. It enables you to manage pick-up routes and keep up-to-date student and staff records, and more.
+										<br />
+										<a target="_blank" href="https://kimble.church" class="mb-5">Check it out!</a>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -126,7 +129,5 @@
 	
 		<script src="./vendor/jquery/jquery.min.js"></script>
 		<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
-		<script src="./js/freelancer.min.js"></script>
 	</body>
 </html>
